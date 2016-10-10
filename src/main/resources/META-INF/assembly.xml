@@ -1,0 +1,40 @@
+<assembly>
+    <id>bin</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>true</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>src/main/resources/bin</directory>
+            <!-- 将dubbo的脚本打包到bin目录 -->
+            <outputDirectory>bin</outputDirectory>
+            <fileMode>0755</fileMode>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>conf</outputDirectory>
+            <fileMode>0644</fileMode>
+            <includes>
+                <include>logback.xml</include>
+                <include>conf/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>WEB-INF</outputDirectory>
+            <fileMode>0644</fileMode>
+            <includes>
+                <include>resources/**</include>
+                <include>static/**</include>
+                <include>public/**</include>
+                <include>templates/**</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+        </dependencySet>
+    </dependencySets>
+</assembly>
