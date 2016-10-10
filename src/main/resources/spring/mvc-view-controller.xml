@@ -7,4 +7,5 @@
 
     <!-- 可直接配置controller匹配路径 -->
     <mvc:view-controller path="/" view-name="index"/>
+    <mvc:view-controller path="/terminal" view-name="terminal/index"/>
 </beans>

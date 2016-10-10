@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
     <#include "inc/meta.ftl"/>
     <#--在这里加入自定义js及样式文件-->
 </head>
 <body>
-<!-- Main navbar -->
-<#include "inc/navbar.ftl" />
-<!-- /main navbar -->
+<#include "inc/header.ftl" />
 
 <!-- Page container -->
 <div class="page-container">
     <!-- Page content -->
     <div class="page-content">
-        <!-- Main sidebar -->
         <#include "inc/sidebar.ftl"/>
-        <!-- /main sidebar -->
-
         <!-- Main content -->
         <div class="content-wrapper">
-            <!-- Page header -->
-            <#include "inc/header.ftl" />
-            <!-- /page header -->
+            <div class="page-header">
+                <div class="breadcrumb-line">
+                    <ul class="breadcrumb ">
+                        <li><a href="${ctx}/"><i class="icon-home2 position-left"></i> Home</a></li>
+                    </ul>
+                </div>
+            </div>
             <!-- Content area -->
             <div class="content">
                 <!-- Page length options -->
@@ -55,7 +53,7 @@
                         </div>
                     </div>
 
-                    <table class="table table-striped table-hover datatable-column-search-inputs" id="terminal_datatable">
+                    <table class="table datatable-pagination" id="terminal_datatable">
                         <thead>
                         <tr>
                             <th>序列号</th>

@@ -16,7 +16,7 @@
             <outputDirectory>conf</outputDirectory>
             <fileMode>0644</fileMode>
             <includes>
-                <include>logback.xml</include>
+                <include>logback-spring.xml</include>
                 <include>conf/**</include>
             </includes>
         </fileSet>

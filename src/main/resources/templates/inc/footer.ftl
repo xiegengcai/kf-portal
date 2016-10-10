@@ -1,5 +1,9 @@
 <!-- Footer -->
 <div class="navbar navbar-default navbar-sm navbar-fixed-bottom">
+    <div class="navbar-text">
+        Copyright &copy; ${.now?string("yyyy")}. <a href="#">米联科后台管理系统</a> All rights reserved.
+    </div>
+    <#--
     <ul class="nav navbar-nav no-border visible-xs-block">
         <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second"><i class="icon-circle-up2"></i></a></li>
     </ul>
@@ -31,5 +35,6 @@
             </ul>
         </div>
     </div>
+    -->
 </div>
 <!-- /footer -->
